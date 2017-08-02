@@ -14,6 +14,7 @@ import MenuIcon from "material-ui-icons/Menu";
 import Card, {CardContent, CardActions, CardMedia} from "material-ui/Card";
 import Avatar from "material-ui/Avatar";
 import Badge from "material-ui/Badge";
+import { Link } from 'react-router-dom'
 
 const styleSheet = createStyleSheet(theme => ({
     root:{
@@ -37,9 +38,11 @@ const styleSheet = createStyleSheet(theme => ({
     },
     card:{
         margin: '100px auto',
-        maxWidth: 450,
-        justifyContent: 'center',
-        color: theme.palette.text.secondary,
+        textAlign: 'left',
+        background: 'none',
+        boxShadow: 'none',
+        maxWidth: 1170
+
     },
     bigAvatar: {
         margin: '10px auto',
@@ -98,12 +101,11 @@ function Header(props) {
              <AppBar position="fixed" color="primary" component="nav">
                     <Toolbar>
                         <div className={classes.flexGrow} />
-                        <Button color ="contrast">Home</Button>
-                        <Button color ="contrast">Projects</Button>
-                        <Button color ="contrast">About</Button>
-                        <Button color ="contrast">Resume</Button>
-                        <Button color ="contrast">Contact</Button>
-                        <IconButton color="contrast" className={classes.button} aria-label="Check out Brian Noriega's github.">
+                        <Button href="#" color ="contrast">Home</Button>
+                        <Button href="https://github.com/noriega3" color ="contrast">Works</Button>
+                        <Button href="/assets/resume.pdf" color ="contrast">Resume</Button>
+                        <Button href="mailto:brian.noriega3@gmail.com" color ="contrast">Contact</Button>
+                        <IconButton href="https://github.com/noriega3/briannoriega.com" color="contrast" className={classes.button} aria-label="Check out Brian Noriega's github.">
                             <GitHubIcon />
                         </IconButton>
                     </Toolbar>
@@ -113,18 +115,18 @@ function Header(props) {
                         <CardMedia className={classes.cardMedia}>
                             <Avatar aria-label="Me" src="assets/me.jpg" className={classes.bigAvatar} />
                         </CardMedia>
-                        <Typography type="headline" color="inherit" component="h2">
-                            Brian Noriega
+                        <Typography type="display3" color="inherit" component="h2">
+                            Hi, I'm Brian Noriega
                         </Typography>
-                        <Typography component="p" color="inherit" className={classes.pos}>
-                            A software developer from Jacksonville FL / Cleveland, OH
+                        <Typography type="headline" component="p" color="inherit" className={classes.pos}>
+                            A developer, with passion for creating applications for mobile, desktop, and web.<br />
                         </Typography>
                     </CardContent>
                     <CardActions  disableActionSpacing>
-                        <div className={classes.flexGrow} />
+{/*                        <div className={classes.flexGrow} />
                         <Button raised color="primary" className={classes.button}>
                             Learn More
-                        </Button>
+                        </Button>*/}
                     </CardActions>
                 </Card>
         </Paper>

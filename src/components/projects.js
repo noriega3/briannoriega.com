@@ -49,11 +49,12 @@ const styleSheet = createStyleSheet(theme => ({
         flexWrap: 'wrap'
     },
     badge: {
-        margin: `0 ${theme.spacing.unit * 2}px`,
+        margin: `0 ${theme.spacing.unit * 1.5}px`,
     },
     card: {
         textAlign: 'left',
-        maxWidth: 345,
+        width: 275,
+        height: 275,
     },
 }));
 
@@ -66,7 +67,7 @@ function Projects(props) {
             </Typography>
             <Grid container gutter={24}>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card}  square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 In Progress
@@ -92,7 +93,7 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 In Progress
@@ -118,13 +119,13 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 In Progress
                             </Typography>
                             <Typography type="headline" component="h2">
-                                "Color" Game Unity Project
+                                Color Pop World
                             </Typography>
                             <div className={classes.row}>
                                 <Chip label="Unity 2D" className={classes.chip} />
@@ -141,7 +142,7 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 Live
@@ -167,7 +168,7 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 Live
@@ -192,7 +193,7 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 Live
@@ -220,7 +221,7 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 Live
@@ -244,7 +245,7 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 Website
@@ -267,7 +268,7 @@ function Projects(props) {
                     </Card>
                 </Grid>
                 <Grid item lg={3}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} square={true}>
                         <CardContent>
                             <Typography type="body1" className={classes.title}>
                                 Website
