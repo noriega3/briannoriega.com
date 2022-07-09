@@ -37,7 +37,7 @@ class MyDocument extends Document {
           <meta name="twitter:image" content={meta.image} />
         </Head>
         <body>
-        <noscript>
+          <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
               height="0"
