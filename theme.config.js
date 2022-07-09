@@ -1,6 +1,8 @@
 const YEAR = new Date().getFullYear()
 
 export default {
+  projectLink: 'https://briannoriega.com',
+  titleSuffix: ' | Brian Noriega',
   footer: (
     <footer>
       <small>
