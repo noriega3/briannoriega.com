@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import Head from 'next/head'
+import * as ackeeTracker from 'ackee-tracker'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +21,8 @@ export default function App({ Component, pageProps }: AppProps) {
         })(window,document,'script','dataLayer','GTM-KQSH5L2');
       `}
       </Script>
-    <Component {...pageProps} />
+      <Script id="bnack" src="https://srv.briannoriega.com/bnack.js" data-ackee-server="https://srv.briannoriega.com" data-ackee-domain-id="27a48fea-231d-4a1f-8476-0d4d9d7953d2" data-ackee-opts='{"detailed": true}' />
+      <Component {...pageProps} />
     </>
   )
 }
