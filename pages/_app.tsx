@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import Head from 'next/head'
-import * as ackeeTracker from 'ackee-tracker'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
