@@ -14,10 +14,6 @@ export default function Home() {
           Currently, I work as a Technical Manager and Senior Software Engineer at Aetna, leading and contributing to innovative software solutions. </p>
         <p className={styles.code}> Note: A work in progress as of Jan 2023</p>
         <div className={styles.grid}>
-          <a href="https://blog.briannoriega.com" className={styles.card}>
-            <h2>Blog &rarr;</h2>
-            <p>Curious to see my personal and professional journey?</p>
-          </a>
 
           <a href="https://www.github.com/noriega3"
             target="_blank"
