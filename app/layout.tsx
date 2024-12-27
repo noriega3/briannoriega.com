@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
-import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
 import { BackgroundBeams } from "./components/ui/background-beams";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Brian Noriega",
-  description: "Personal website for brian noriega.",
+  description: "Brian Noriega is a software engineer and engineering manager who specializes in building fast, accessible, and user-friendly web applications.",
 };
 
 export default function RootLayout({
@@ -39,6 +40,7 @@ export default function RootLayout({
           data-website-id={process.env.NEXT_PUBLIC_SRV2_ID}
           strategy="afterInteractive"
         ></Script>
+        <SpeedInsights/>
       </body>
     </html>
   );
