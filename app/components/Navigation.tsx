@@ -7,45 +7,51 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { LuConstruction } from "react-icons/lu";
 import { MdNewReleases } from "react-icons/md";
+import { LuConstruction } from "react-icons/lu";
 
 const navigation = [
   { id: "home", name: "Home", href: "/" },
   {
     id: "about",
+    name: "About",
+    href: "/about",
+  },
+  {
+    id: "projects",
     name: (
       <span className="has-tooltip">
         <span
           aria-hidden="true"
-          className="tooltip rounded shadow-lg p-1 bg-gray-100 text-red-500 font-bold -mt-8"
+          className="tooltip rounded shadow-lg p-1 bg-gray-100 text-red-500 font-bold -mt-8 text-xs"
         >
           New!
         </span>
-        About{" "}
+        Projects{" "}
         <MdNewReleases
           className="has-tooltip inline align-middle text-yellow-500 size-4"
           title="New"
         />
       </span>
     ),
-    href: "/about",
+    href: "/projects",
   },
   {
-    id: "projects",
+    id: "blog",
     name: (
       <>
-        <span className="line-through	">Projects</span>
+        <span className="line-through opacity-50">Blog</span>
         <LuConstruction
           className=" inline text-red-500 size-4"
           title="Under Construction"
         />
       </>
     ),
-    href: "/projects",
+    href: "#",
   },
 ];
-export function Navigation({ className }: { className: string }) {
+
+export const Navigation = ({ className }: { className: string; }) => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
