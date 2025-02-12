@@ -2,18 +2,19 @@
 import React from "react";
 import { Timeline } from "../components/ui/timeline";
 import { ContactIcons } from "../components/ui/contact-icons";
+import { Certifications } from "../components/ui/certifications";
 
 export default function About() {
   const data = [
     {
-      title: "2020 - Present",
+      title: "2020 - 2025",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-bold mb-1">
             Aetna / HealthSpire, a CVS Health Company
           </p>
           <p className="text-neutral-400 text-xs md:text-sm mb-2">
-            Staff Engineer (Manager)
+            Lead Engineer
             <br />
             Senior Engineer
           </p>
@@ -540,6 +541,7 @@ export default function About() {
           <ContactIcons />
         </div>
       </Timeline>
+      <Certifications />
     </>
   );
 }
