@@ -2,9 +2,6 @@
 import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 
-export function Hero() {
-  return <HeroParallax products={products} />;
-}
 export const products = [
   /*{
     title: "MTA ETA (nextstop) App",
@@ -50,3 +47,8 @@ export const products = [
     thumbnail: "/bnsite/img-app-casino.webp",
   },
 ];
+
+export const Hero = () => {
+  return <HeroParallax products={products} />;
+}
+
