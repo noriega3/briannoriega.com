@@ -3,6 +3,7 @@ import React from "react";
 import { cn } from "../../../lib/utils";
 import { FaNewspaper, FaLinkedin, FaGithub } from "react-icons/fa";
 import { HoverTitleLink } from "./hover-title-link";
+
 const links = [
   {
     label: "GitHub",
@@ -20,6 +21,7 @@ const links = [
     icon: <FaNewspaper className=" h-8 w-8" title="Resume" />,
   },
 ];
+
 export const ContactIcons = ({ className }: { className?: string }) => {
   return (
     <div

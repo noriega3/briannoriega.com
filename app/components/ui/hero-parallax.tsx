@@ -95,14 +95,13 @@ export const HeroParallax = ({
       </div>
       <div className="hidden sm:flex justify-center">
         <Link href="/projects">
-        <button className="p-[3px] relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-          <div className="px-8 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-            View Selected Projects
-          </div>
-        </button>
+          <button className="p-[3px] relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+            <div className="px-8 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+              View All Projects
+            </div>
+          </button>
         </Link>
-
       </div>
     </>
   );
@@ -123,16 +122,20 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 sm:py-32 px-4 w-full z-10">
       <h1>
-        <TypewriterEffect words={words} className="text-3xl md:text-7xl font-bold dark:text-white" />
+        <TypewriterEffect
+          words={words}
+          className="text-3xl md:text-7xl font-bold dark:text-white"
+        />
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        I&apos;m a Software Engineer specializing in building fast, accessible, and
-        user-friendly web applications. With expertise in tech such as React,
-        Next.js, and Node.js, I create scalable solutions that drive results.
-        Connect with me and lets build something great.
+        I&apos;m a Software Engineer specializing in building fast, accessible,
+        and user-friendly web applications. With expertise in tech such as
+        React, Next.js, and Node.js, I create scalable solutions that drive
+        results. Connect with me and lets build something great.
         <br />
         <br />
-        <TbAlertTriangleFilled className="inline size-6 text-yellow-400" /> Notice: This page is in alpha. 
+        <TbAlertTriangleFilled className="inline size-6 text-yellow-400" />{" "}
+        Notice: This page is in alpha.
       </p>
       <ContactIcons className="hidden py-5 sm:visible" />
     </div>
@@ -152,7 +155,6 @@ export const ProductCard = ({
 }) => {
   return (
     <motion.div
-
       style={{
         x: translate,
       }}
@@ -162,16 +164,14 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
-
-        <Image
-          aria-hidden="true"
-          src={product.thumbnail}
-          height="500"
-          width="500"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
-          alt={product.title}
-        />
-
+      <Image
+        aria-hidden="true"
+        src={product.thumbnail}
+        height="500"
+        width="500"
+        className="object-cover object-left-top absolute h-full w-full inset-0"
+        alt={product.title}
+      />
     </motion.div>
   );
 };
