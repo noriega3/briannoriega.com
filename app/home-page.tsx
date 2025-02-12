@@ -1,5 +1,6 @@
 "use client";
 import { Hero } from "./components/Hero";
+import { Skills } from "./components/ui/skills";
 
 export default function HomePage() {
   return (
@@ -30,6 +31,7 @@ export default function HomePage() {
         />
       </div>
       <Hero />
+      <Skills />
     </>
   );
 }
