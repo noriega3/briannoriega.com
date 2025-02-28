@@ -3,6 +3,7 @@ import React from "react";
 import { Timeline } from "../components/ui/timeline";
 import { ContactIcons } from "../components/ui/contact-icons";
 import { Certifications } from "../components/ui/certifications";
+import { Badge } from "../components/ui/badge";
 
 export default function About() {
   const data = [
@@ -18,12 +19,12 @@ export default function About() {
             <br />
             Senior Engineer
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Aetna is part of the Fortune 500 and a major insurance carrier.
             Focused on digital Medicare marketing to drive increased enrollments
             through phone and web channels.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Lead a successful mobile application pilot in retail CVS utilizing
             React, JavaScript, PHP and headless WordPress. Implemented and
             managed an AI chatbot which captured member traffic on web pages,
@@ -33,89 +34,89 @@ export default function About() {
           </p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 JavaScript
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 TypeScript
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 React
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Microsoft Azure
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 OpenShift
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 PHP
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Headless WordPress
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Material UI
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Storybook
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Vue
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Docker
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Jenkins
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Octopus
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 UDeploy
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Adobe Experience Manager
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Salesforce
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 MySQL / MariaDB
-              </div>
+              </Badge>
             </li>
           </ul>
         </div>
@@ -132,12 +133,12 @@ export default function About() {
             Platform Software Engineer (Web)
             <br />
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             WillowTree is a digital design and development agency partnering
             with companies like Synchrony, Zappos, PepsiCo, HBO, and GE to solve
             real-world product strategy, design, and technical problems.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Built React web pages for a Fortune 500 financial partner, utilizing
             Redux, Express, Material UI, and SCSS. Consistently met sprint
             deadlines in a Scrum/Agile environment through effective
@@ -146,49 +147,49 @@ export default function About() {
           </p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 JavaScript
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 TypeScript / Flow
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 React
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 UDeploy
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Material UI
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Storybook
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Docker
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Jira
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Google Tag Manager
-              </div>
+              </Badge>
             </li>
           </ul>
         </div>
@@ -206,7 +207,7 @@ export default function About() {
               Engineer (Contract)
               <br />
             </p>
-            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
               Conversion Fanatics is a digital marketing agency, focused on
               optimizing sales and other key metrics for clients such as Burts
               Bees, RenewLife, ButcherBox, and many more.
@@ -216,44 +217,44 @@ export default function About() {
               aria-label="Technologies used"
             >
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   JavaScript
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   JQuery
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   HTML
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   CSS / SCSS
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   Optimizely
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   Convert
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   PHP
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   Google Tag Manager
-                </div>
+                </Badge>
               </li>
             </ul>
           </div>
@@ -264,7 +265,7 @@ export default function About() {
             <p className="text-neutral-400 text-xs md:text-sm mb-2">
               Instructional Staff
             </p>
-            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
               Case Western Reserve University is a private accredited
               doctorate-granting university. The department was responsible for
               teaching web development and running through these terms to
@@ -275,34 +276,34 @@ export default function About() {
               aria-label="Technologies used"
             >
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   JavaScript
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   JQuery
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   HTML
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   CSS / SCSS
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   MySQL
-                </div>
+                </Badge>
               </li>
               <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <Badge>
                   REST APIs
-                </div>
+                </Badge>
               </li>
             </ul>
           </div>
@@ -319,7 +320,7 @@ export default function About() {
           <p className="text-neutral-400 text-xs md:text-sm mb-2">
             Senior Engineer
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Bomzy Apps is a mobile application company specializing in
             casino-themed mobile applications that replicated the casino
             experience without required monetary transactions.
@@ -329,54 +330,54 @@ export default function About() {
             aria-label="Technologies used"
           >
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Node.js
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Lua
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 React
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 JavaScript
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 PHP
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Express.js
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 MySQL
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Redis
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Jira
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Socket.io
-              </div>
+              </Badge>
             </li>
           </ul>
         </div>
@@ -390,13 +391,13 @@ export default function About() {
             MECLABS Institute
           </p>
           <p className="text-neutral-400 text-xs md:text-sm mb-2">Engineer</p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             MECLABS is a digital marketing agency. The company used behavioral
             testing to help businesses understand why people say yes (or no) to
             their offers. Overall, they help discover their value propositions
             and create effective messaging to connect with ideal customers.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Deployed over 50 landing pages, e-commerce experiences, and
             content-hub websites for partners such as Boston Globe, Bridgestone,
             Verizon, and McGraw-Hill to improve their overall sales goals.
@@ -406,44 +407,44 @@ export default function About() {
             aria-label="Technologies used"
           >
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 PHP
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 HTML5
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 CSS
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 JavaScript
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 JQuery / JQuery UI
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Google Analytics
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Adobe Test & Target
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Optimizely
-              </div>
+              </Badge>
             </li>
           </ul>
         </div>
@@ -459,7 +460,7 @@ export default function About() {
           <p className="text-neutral-400 text-xs md:text-sm mb-2">
             Senior Engineer
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Code S was an incorporated company that released various mobile apps
             and other open sourced projects.
           </p>
@@ -468,49 +469,49 @@ export default function About() {
             aria-label="Technologies used"
           >
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 PHP
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Lua
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 HTML5
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 CSS
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 JavaScript
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 JQuery / JQuery UI
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Android (Java)
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Unity (C#)
-              </div>
+              </Badge>
             </li>
             <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <Badge>
                 Google Tag Manager
-              </div>
+              </Badge>
             </li>
           </ul>
         </div>
@@ -535,7 +536,7 @@ export default function About() {
     <>
       <Timeline data={data}>
         <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
-          <h1 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+          <h1 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">
             My career journey (so far)
           </h1>
           <ContactIcons />

@@ -1,6 +1,7 @@
 "use client";
+import { FeaturedProjects } from "./components/FeaturedProjects";
 import { Hero } from "./components/Hero";
-import { Skills } from "./components/ui/skills";
+import { HeroBlocks } from "./components/HeroBlocks";
 
 export default function HomePage() {
   return (
@@ -31,7 +32,8 @@ export default function HomePage() {
         />
       </div>
       <Hero />
-      <Skills />
+      <FeaturedProjects />
+      <HeroBlocks />
     </>
   );
 }

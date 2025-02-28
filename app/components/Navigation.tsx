@@ -1,14 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { cn } from "../../lib/utils";
-import { CiMenuBurger } from "react-icons/ci";
-import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { MdNewReleases } from "react-icons/md";
-import { LuConstruction } from "react-icons/lu";
+import { Menu, X, Sparkle, Construction } from "lucide-react";
 
 const navigation = [
   { id: "home", name: "Home", href: "/" },
@@ -28,9 +25,9 @@ const navigation = [
           New!
         </span>
         Projects{" "}
-        <MdNewReleases
+        <Sparkle
           className="has-tooltip inline align-middle text-yellow-500 size-4"
-          title="New"
+          aria-label="New"
         />
       </span>
     ),
@@ -41,9 +38,9 @@ const navigation = [
     name: (
       <>
         <span className="line-through opacity-50">Blog</span>
-        <LuConstruction
+        <Construction
           className=" inline text-red-500 size-4"
-          title="Under Construction"
+          aria-label="Under Construction"
         />
       </>
     ),
@@ -86,7 +83,7 @@ export const Navigation = ({ className }: { className: string; }) => {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
-            <CiMenuBurger aria-hidden="true" className="size-6 text-white" />
+            <Menu aria-hidden="true" className="size-6 text-white" />
           </button>
         </div>
         <div className="hidden md:flex md:gap-x-12"></div>
@@ -171,7 +168,7 @@ const MobileMenu = ({
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="sr-only">Close menu</span>
-                  <IoClose className="size-6 text-white" />
+                  <X className="size-6 text-white" />
                 </button>
               </div>
               <div className="mt-6 flow-root">

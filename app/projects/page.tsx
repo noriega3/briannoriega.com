@@ -4,6 +4,7 @@ import { ProjectRow } from "@/lib/schema";
 import React, { useEffect, useState } from "react";
 import { TableLoading } from "../components/ui/table-loading";
 import { ContactIcons } from "../components/ui/contact-icons";
+import { Badge } from "../components/ui/badge";
 
 //TODO: clean up and modularize code for new site sections
 export default function Projects() {
@@ -33,7 +34,7 @@ export default function Projects() {
   return (
     <>
       <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
-        <h1 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+        <h1 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">
           All Projects
         </h1>
         <div className="text-base">Last Updated: January 2025</div>
@@ -71,7 +72,7 @@ export default function Projects() {
                   >
                     Server Offline. Please try again later.
                     <br />
-                    <p className="py-5 dark:text-neutral-200">
+                    <p className="py-5 text-neutral-200">
                       Connect with me:{" "}
                       <ContactIcons className="sm:inline-flex sm:align-middle ml-5" />
                     </p>
@@ -103,7 +104,6 @@ export default function Projects() {
                             <a
                               className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-slate-200 focus-visible:text-teal-300 sm:hidden group/link text-base"
                               href={link}
-                              target="_blank"
                               rel="noreferrer noopener"
                               aria-label={`${linkText} (opens in a new tab)`}
                             >
@@ -140,9 +140,9 @@ export default function Projects() {
                         <ul className="flex -translate-y-1.5 flex-wrap">
                           {skills.split(",").map((skill) => (
                             <li className="my-1 mr-1.5" key={skill}>
-                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                              <Badge>
                                 {skill}
-                              </div>
+                              </Badge>
                             </li>
                           ))}
                         </ul>
@@ -154,7 +154,6 @@ export default function Projects() {
                               <a
                                 className="inline-flex items-baseline font-medium leading-tight text-slate-400 hover:text-slate-200 focus-visible:text-teal-300 group/link text-sm"
                                 href={link}
-                                target="_blank"
                                 rel="noreferrer noopener"
                                 aria-label={`${linkText} (opens in a new tab)`}
                               >
