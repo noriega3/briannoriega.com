@@ -39,7 +39,6 @@ export const ContactIcons = ({ className }: { className?: string }) => {
                 onMouseMove={handleMouseMove}
                 className="text-white hover:text-teal-200"
                 href={link.href}
-                target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Go to Brian Noriega ${link.label} page`}
                 title={link.label}

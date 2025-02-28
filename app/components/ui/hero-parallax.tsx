@@ -124,10 +124,10 @@ export const Header = () => {
       <h1>
         <TypewriterEffect
           words={words}
-          className="text-3xl md:text-7xl font-bold dark:text-white"
+          className="text-3xl md:text-7xl font-bold text-white"
         />
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+      <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
         I&apos;m a Software Engineer specializing in building fast, accessible,
         and user-friendly web applications. With expertise in tech such as
         React, Next.js, and Node.js, I create scalable solutions that drive
