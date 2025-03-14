@@ -32,8 +32,6 @@ export default function HomePage() {
         />
       </div>
       <Hero />
-      <FeaturedProjects />
-      <HeroBlocks />
     </>
   );
 }
