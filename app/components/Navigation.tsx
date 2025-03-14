@@ -16,22 +16,21 @@ const navigation = [
   },
   {
     id: "projects",
-    name: (
-      <span className="has-tooltip">
-        <span
-          aria-hidden="true"
-          className="tooltip rounded shadow-lg p-1 bg-gray-100 text-red-500 font-bold -mt-8 text-xs"
-        >
-          New!
-        </span>
-        Projects{" "}
-        <Sparkle
-          className="has-tooltip inline align-middle text-yellow-500 size-4"
-          aria-label="New"
-        />
-      </span>
-    ),
+    name: "Projects",
     href: "/projects",
+  },
+  {
+    id: "services",
+    name: (
+      <>
+        <span className="line-through opacity-50">Services</span>
+        <Construction
+          className=" inline text-red-500 size-4"
+          aria-label="Under Construction"
+        />
+      </>
+    ),
+    href: "#",
   },
   {
     id: "blog",
@@ -90,7 +89,6 @@ export const Navigation = ({ className }: { className: string; }) => {
         <div className="hidden md:flex md:flex-1 md:gap-x-12 md:justify-end">
           {navigation.map((item) => (
             <Link
-              onClick={() => setMobileMenuOpen(true)}
               key={item.id}
               href={item.href}
               className={cn(
