@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTAG_ID || ""} />
-      <body className="relative w-full h-svh flex flex-row sm:flex-col flex-wrap sm:flex-nowrap bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+      <body className="relative w-full h-svh flex flex-row sm:flex-col flex-wrap sm:flex-nowrap bg-slate-900 leading-relaxed text-slate-300 antialiased selection:bg-teal-300 selection:text-teal-900">
         <Navigation className="w-fixed w-full flex-shrink flex-grow-0" />
         <main role="main" className="w-full flex-grow">
           {children}

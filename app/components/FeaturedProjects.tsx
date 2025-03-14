@@ -56,5 +56,14 @@ export const products = [
 ];
 
 export const FeaturedProjects = () => {
-  return <FocusCards cards={products} />;
+  return (
+    <div className="hidden md:block">
+      <h1 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">
+        Highlighted Projects
+      </h1>
+      <div className="md:px-10 mb-20">
+        <FocusCards cards={products} />
+      </div>
+    </div>
+  );
 }
