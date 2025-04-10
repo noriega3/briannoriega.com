@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
 import { BackgroundBeams } from "./components/ui/background-beams";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Brian Noriega",
-  description: "Brian Noriega is a software engineer and engineering manager who specializes in building fast, accessible, and user-friendly web applications.",
+  metadataBase: new URL('https://www.briannoriega.com'),
+  title: {
+    default: 'Brian Noriega',
+    template: '%s | Brian Noriega'
+  },
+  description:
+    "Brian Lawrence Noriega is a software engineer and engineering manager who specializes in building fast, accessible, and user-friendly web applications.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTAG_ID || ""} />
@@ -40,7 +41,7 @@ export default function RootLayout({
           data-website-id={process.env.NEXT_PUBLIC_SRV2_ID}
           strategy="afterInteractive"
         ></Script>
-        <SpeedInsights/>
+        <SpeedInsights />
       </body>
     </html>
   );

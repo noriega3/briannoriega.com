@@ -14,15 +14,7 @@ const words = [
     text: "Brian",
   },
 ];
-const skills = [
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node",
-  "PostgreSQL",
-  "PHP",
-  "Lua",
-];
+const skills = ["TypeScript", "React", "Next.js", "Node", "PostgreSQL", "PHP", "Lua"];
 
 export const HeroDefault = () => {
   return (
@@ -35,10 +27,9 @@ export const HeroDefault = () => {
           />{" "}
         </h1>
         <p className="mb-4 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-          Also known as Lawrence, I&apos;m a Software Engineer specializing in
-          building fast, accessible, and user-friendly applications. With
-          expertise in tech such as TypeScript, React, Next.js, and Node.js, I create
-          scalable solutions that drive results.
+          Also known as Lawrence, I&apos;m a Software Engineer specializing in building fast,
+          accessible, and user-friendly applications. With expertise in tech such as TypeScript,
+          React, Next.js, and Node.js, I create scalable solutions that drive results.
         </p>
         <ul className="mb-8 flex flex-wrap justify-center">
           {skills.map((skill) => (

@@ -3,43 +3,65 @@
   "version": "5.0.0",
   "private": true,
   "description": "briannoriega.com",
-  "author": "Brian",
+  "author": "@noriega3",
   "keywords": [
-    "personal-blog"
+    "personal-site"
   ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbopack --port=3001",
+    "build": "next build --turbopack",
     "start": "next start",
-    "lint": "next lint"
+    "prettier:format": "prettier --write .",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,json}\"",
+    "lint": "next lint",
+    "eslint:format": "eslint app --fix",
+    "postinstall": "husky"
+  },
+  "engines": {
+    "node": ">=18.20.2"
   },
   "dependencies": {
-    "@next/env": "^15.1.2",
-    "@next/third-parties": "^15.1.2",
-    "@radix-ui/react-dialog": "^1.1.6",
-    "@supabase/supabase-js": "^2.48.1",
-    "@vercel/speed-insights": "^1.1.0",
+    "@next/env": "^15.3.0",
+    "@next/third-parties": "^15.3.0",
+    "@radix-ui/react-dialog": "^1.1.7",
+    "@supabase/supabase-js": "^2.49.4",
+    "@vercel/speed-insights": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.15.0",
+    "framer-motion": "^11.18.2",
     "lucide-react": "^0.477.0",
-    "next": "^15.1.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
-    "@types/react": "^19.0.2",
-    "@types/react-dom": "^19.0.2",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.17.0",
-    "eslint-config-next": "^15.1.2",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.24.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.2",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "^15.3.0",
     "eslint-config-prettier": "^9.1.0",
-    "postcss": "^8.4.49",
+    "eslint-plugin-prettier": "^5.2.6",
+    "husky": "^9.1.7",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "react-error-boundary": "^5.0.0",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2"
+    "typescript": "^5.8.3"
+  },
+  "lint-staged": {
+    "app/**/*": [
+      "pnpm prettier:format",
+      "pnpm eslint:format"
+    ]
   }
 }

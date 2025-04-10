@@ -24,10 +24,7 @@ const navigation = [
     name: (
       <>
         <span className="line-through opacity-50">Services</span>
-        <Construction
-          className=" inline text-red-500 size-4"
-          aria-label="Under Construction"
-        />
+        <Construction className=" inline text-red-500 size-4" aria-label="Under Construction" />
       </>
     ),
     href: "#",
@@ -37,17 +34,14 @@ const navigation = [
     name: (
       <>
         <span className="line-through opacity-50">Blog</span>
-        <Construction
-          className=" inline text-red-500 size-4"
-          aria-label="Under Construction"
-        />
+        <Construction className=" inline text-red-500 size-4" aria-label="Under Construction" />
       </>
     ),
     href: "#",
   },
 ];
 
-export const Navigation = ({ className }: { className: string; }) => {
+export const Navigation = ({ className }: { className: string }) => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -59,10 +53,7 @@ export const Navigation = ({ className }: { className: string; }) => {
 
   return (
     <header className={cn("relative top-0 z-50", className)}>
-      <nav
-        aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8"
-      >
+      <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Brian Noriega Personal Site</span>
@@ -93,7 +84,7 @@ export const Navigation = ({ className }: { className: string; }) => {
               href={item.href}
               className={cn(
                 "text-sm/6 font-semibold text-neutral-300 hover:text-teal-200 active:text-teal-300 focus:outline-none focus:ring focus:ring-teal-300",
-                pathname === item.href && "text-teal-300"
+                pathname === item.href && "text-teal-300",
               )}
             >
               {item.name}
@@ -108,7 +99,7 @@ export const Navigation = ({ className }: { className: string; }) => {
       </nav>
     </header>
   );
-}
+};
 
 const MobileMenu = ({
   pathname,
@@ -120,16 +111,11 @@ const MobileMenu = ({
   setMobileMenuOpen: Function;
 }) => {
   return (
-    <div
-      className="lg:hidden"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Navigation Menu"
-    >
+    <div className="lg:hidden" role="dialog" aria-modal="true" aria-label="Navigation Menu">
       <div
         className={cn(
           "fixed invisible inset-0 z-40 backdrop-filter backdrop-blur-lg",
-          open && "visible"
+          open && "visible",
         )}
       ></div>
 
@@ -145,7 +131,7 @@ const MobileMenu = ({
               ease: "easeInOut",
             }}
             className={cn(
-              "fixed inset-y-0 right-0 z-50 w-full overflow-y-auto  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+              "fixed inset-y-0 right-0 z-50 w-full overflow-y-auto  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10",
             )}
           >
             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -178,7 +164,7 @@ const MobileMenu = ({
                         href={item.href}
                         className={cn(
                           "-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-300 hover:bg-gray-700 hover:text-white",
-                          pathname === item.href && "bg-gray-900 text-white"
+                          pathname === item.href && "bg-gray-900 text-white",
                         )}
                       >
                         {item.name}

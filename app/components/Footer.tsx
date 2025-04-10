@@ -12,9 +12,8 @@ export const Footer = () => {
       <hr className="my-6  sm:mx-auto border-gray-700 lg:my-8" />
 
       <div className="my-6 text-neutral-200">
-        A website by Brian Noriega. Built in Next.js, Tailwind CSS, and
-        Supabase.
+        A website by Brian Noriega. Built in Next.js, Tailwind CSS, and Supabase.
       </div>
     </footer>
   );
-}
+};

@@ -8,7 +8,7 @@ const links = [
   {
     label: "GitHub",
     href: "https://github.com/noriega3",
-    icon: <FaGithub className="h-8 w-8" title="GitHub"/>,
+    icon: <FaGithub className="h-8 w-8" title="GitHub" />,
   },
   {
     label: "LinkedIn",
@@ -24,17 +24,11 @@ const links = [
 
 export const ContactIcons = ({ className }: { className?: string }) => {
   return (
-    <div
-      className={cn("sm:flex sm:items-center sm:justify-between ", className)}
-    >
+    <div className={cn("sm:flex sm:items-center sm:justify-between ", className)}>
       <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0 ">
         {links.map((link, i) => (
           <HoverTitleLink key={i} label={link.label}>
-            {(
-              handleMouseMove:
-                | React.MouseEventHandler<HTMLAnchorElement>
-                | undefined
-            ) => (
+            {(handleMouseMove: React.MouseEventHandler<HTMLAnchorElement> | undefined) => (
               <a
                 onMouseMove={handleMouseMove}
                 className="text-white hover:text-teal-200"

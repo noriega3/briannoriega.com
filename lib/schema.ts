@@ -1,20 +1,14 @@
-export type Json =
-  | string
-  | number
-  | boolean
-  | null
-  | { [key: string]: Json }
-  | Json[];
+export type Json = string | number | boolean | null | { [key: string]: Json } | Json[];
 
 export interface ProjectRow {
-    id: number;
-    year: number;
-    project: string;
-    at?: string | null;
-    skills: string;
-    linkText?: string | null;
-    link?: string | null;
-    is_github?: boolean | null;
+  id: number;
+  year: number;
+  project: string;
+  at?: string | null;
+  skills: string;
+  linkText?: string | null;
+  link?: string | null;
+  is_github?: boolean | null;
 }
 
 export interface Database {
