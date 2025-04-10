@@ -17,7 +17,7 @@ export const ButtonsCard = ({
       onClick={onClick}
       className={cn(
         "h-60 w-full rounded-xl border bg-black border-white/[0.2] hover:border-neutral-200 group/btn overflow-hidden relative flex items-center justify-center",
-        className
+        className,
       )}
     >
       <div className="absolute inset-0 bg-dot-white/[0.1]" />

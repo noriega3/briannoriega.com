@@ -8,7 +8,7 @@ export const HoverTitleLink = ({
 }: {
   label: string;
   children: (
-    handleMouseMove: React.MouseEventHandler<HTMLAnchorElement> | undefined
+    handleMouseMove: React.MouseEventHandler<HTMLAnchorElement> | undefined,
   ) => React.ReactNode;
 }) => {
   const [showTooltip, setShowTooltip] = useState<boolean | null>(null);
@@ -45,9 +45,7 @@ export const HoverTitleLink = ({
               }}
               className="absolute -top-12 -left-3/4 text-xs rounded-md bg-black z-50 shadow-xl px-4 py-2"
             >
-              <div className="font-bold text-white relative z-30 text-base">
-                {label}
-              </div>
+              <div className="font-bold text-white relative z-30 text-base">{label}</div>
             </motion.div>
           )}
         </AnimatePresence>

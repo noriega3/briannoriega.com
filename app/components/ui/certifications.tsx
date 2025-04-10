@@ -28,9 +28,7 @@ export const certifications = [
 export const Certifications = ({ className }: { className?: string }) => {
   return (
     <div className={cn("max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10", className)}>
-      <h2 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">
-        Certifications
-      </h2>
+      <h2 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">Certifications</h2>
       <div className="relative max-w-7xl mx-auto pb-20 px-8">
         <ul role="list" className="">
           {certifications.map((cert) => (

@@ -1,10 +1,7 @@
 "use client";
 
 const TableRow = () => (
-  <tr
-    className="border-b border-slate-300/10 last:border-none animate-pulse"
-    role="status"
-  >
+  <tr className="border-b border-slate-300/10 last:border-none animate-pulse" role="status">
     <td className="py-4 pr-4 align-top text-sm">
       <div className="h-4 rounded-full bg-gray-700"></div>
     </td>

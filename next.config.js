@@ -2,10 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-      loader: 'custom',
-      loaderFile: './supa-image-loader.js',
+    loader: "custom",
+    loaderFile: "./supa-image-loader.js",
   },
+};
 
-}
-
-module.exports = nextConfig
+module.exports = nextConfig;

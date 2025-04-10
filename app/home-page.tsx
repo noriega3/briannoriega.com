@@ -1,7 +1,4 @@
-"use client";
-import { FeaturedProjects } from "./components/FeaturedProjects";
 import { Hero } from "./components/Hero";
-import { HeroBlocks } from "./components/HeroBlocks";
 
 export default function HomePage() {
   return (
