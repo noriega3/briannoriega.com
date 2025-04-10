@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 
 export default async function Image() {
   const logoData = await readFile(join(process.cwd(), "opengraph-image.jpg"));
-  const logoSrc = Uint8Array.from(logoData).buffer;
+  const logoSrc = `data:image/jpeg;base64,${Buffer.from(logoData).toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -15,7 +15,7 @@ export default async function Image() {
           justifyContent: "center",
         }}
       >
-        <img src={logoSrc} height="100" />
+        <img alt="briannoriega.com image" src={logoSrc} height="100" />
       </div>
     ),
   );
