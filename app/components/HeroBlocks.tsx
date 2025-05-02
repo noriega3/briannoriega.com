@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 
-export const HeroBlocks = () => {
+export const HeroBlocks: React.FC  = () => {
   return (
     <div className="flex justify-center relative p-6 gap-4 lg:px-6 ">
       <Link href="/about">

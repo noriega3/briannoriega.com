@@ -54,7 +54,7 @@ export const products = [
   },
 ];
 
-export const FeaturedProjects = () => {
+export const FeaturedProjects: React.FC  = () => {
   return (
     <div className="hidden md:block">
       <h1 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">Highlighted Projects</h1>

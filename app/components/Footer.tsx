@@ -2,7 +2,7 @@
 import React from "react";
 import { ContactIcons } from "./ui/contact-icons";
 
-export const Footer = () => {
+export const Footer: React.FC  = () => {
   return (
     <footer className="p-6 lg:px-8 z-40">
       <div className="">
