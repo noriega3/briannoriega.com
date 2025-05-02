@@ -1,14 +1,33 @@
 import React from "react";
-
+import { Person, WithContext } from "schema-dts";
 import { Metadata } from "next";
+import Script from "next/script";
 import { Timeline } from "../components/ui/timeline";
 import { ContactIcons } from "../components/ui/contact-icons";
-import { Certifications } from "../components/ui/certifications";
+import { Certifications } from "../components/Certifications";
 import { Badge } from "../components/ui/badge";
-
 
 export const metadata: Metadata = {
   title: "About",
+};
+
+const jsonLd: WithContext<Person> = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Brian Noriega",
+  givenName: "Lawrence",
+  nationality: "United States",
+  jobTitle: "Software Engineer",
+  url: "https://www.briannoriega.com",
+  sameAs: "https://www.nori.nyc",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "New York, NY"
+  },
+  disambiguatingDescription:
+    "A Software Engineer specializing in building fast, accessible, and user-friendly applications. With expertise in tech such as TypeScript, React, Next.js, and Node.js, I create scalable solutions that drive results.",
+  skills:
+    "TypeScript, React, Next.js, Node.js, PHP, Lua, JavaScript, JQuery, WordPress, SPA, Vue, C#, Unity, Visual Basic, MYSQL, MariaDB, REST APIs, SEO, Software Development, Mobile App Development, Agile, Automation, AI",
 };
 
 export default function About() {
@@ -381,14 +400,23 @@ export default function About() {
   ];
 
   return (
-    <div>
-      <Timeline className={"relative"} data={data}>
-        <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
-          <h1 className="text-lg md:text-4xl mb-4  max-w-4xl">My career journey (so far)</h1>
-          <ContactIcons />
-        </div>
-      </Timeline>
-      <Certifications />
-    </div>
+    <>
+      <Script
+        id="person-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
+      <div>
+        <Timeline className={"relative"} data={data}>
+          <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
+            <h1 className="text-lg md:text-4xl mb-4  max-w-4xl">My career journey (so far)</h1>
+            <ContactIcons />
+          </div>
+        </Timeline>
+        <Certifications />
+      </div>
+    </>
   );
 }

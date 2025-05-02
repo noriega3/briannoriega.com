@@ -1,12 +1,35 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { cn } from "../../lib/utils";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Script from "next/script";
+import { BreadcrumbList, WithContext } from "schema-dts";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Sparkle, Construction } from "lucide-react";
+import { Menu, X, Construction } from "lucide-react";
+import { cn } from "../../lib/utils";
 
+const jsonLd: WithContext<BreadcrumbList> = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: { "@id": "https://www.briannoriega.com", "name": "Home" }
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: { "@id": "https://www.briannoriega.com/about", "name": "About" }
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: { "@id": "https://www.briannoriega.com/projects", "name": "Projects" }
+    },
+  ],
+};
 const navigation = [
   { id: "home", name: "Home", href: "/" },
   {
@@ -53,6 +76,13 @@ export const Navigation = ({ className }: { className: string }) => {
 
   return (
     <header className={cn("relative top-0 z-50", className)}>
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">

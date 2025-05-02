@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { cn } from "../../../lib/utils";
+import { cn } from "../../lib/utils";
 
 export const certifications = [
   {
@@ -25,7 +25,7 @@ export const certifications = [
   },
 ];
 
-export const Certifications = ({ className }: { className?: string }) => {
+export const Certifications: React.FC  = ({ className }: { className?: string }) => {
   return (
     <div className={cn("max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10", className)}>
       <h2 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">Certifications</h2>
