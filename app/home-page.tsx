@@ -1,7 +1,7 @@
 import { Person, WithContext } from "schema-dts";
 import { Hero } from "./components/Hero";
 import { Testimonials } from "./components/Testimonials";
-import {ContactForm} from "./components/ContactForm";
+import { ContactSection } from "./components/ContactSection";
 
 export default function HomePage() {
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
       </div>
       <Hero />
       <Testimonials />
-      <ContactForm />
+      <ContactSection />
     </>
   );
 }
