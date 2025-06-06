@@ -4,6 +4,11 @@ import { cn } from "../../lib/utils";
 
 export const certifications = [
   {
+    title: "AWS Cloud Practitioner Essentials",
+    by: "Amazon Web Services via Coursera",
+    link: "https://www.coursera.org/account/accomplishments/records/VW9VC1BSO5IQ",
+  },
+  {
     title: "Advanced React Certification",
     by: "Meta via Coursera",
     link: "https://coursera.org/share/8438de7b9ff139a277bf13d14b6c84cb",
