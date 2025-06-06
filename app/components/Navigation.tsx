@@ -22,20 +22,15 @@ const navigation = [
     href: "/projects",
   },
   {
+    id: "devblog",
+    name: "devblog",
+    href: 'https://devblog.briannoriega.com',
+  },
+  {
     id: "services",
     name: (
       <>
         <span className="line-through opacity-50">Services</span>
-        <Construction className=" inline text-red-500 size-4" aria-label="Under Construction" />
-      </>
-    ),
-    href: "#",
-  },
-  {
-    id: "blog",
-    name: (
-      <>
-        <span className="line-through opacity-50">Blog</span>
         <Construction className=" inline text-red-500 size-4" aria-label="Under Construction" />
       </>
     ),
