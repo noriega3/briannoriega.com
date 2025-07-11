@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring, MotionValue } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { TypewriterEffect } from "./typewriter-effect";

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
 import { BreadcrumbList, WithContext } from "schema-dts";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import { Menu, X, Construction } from "lucide-react";
 import { cn } from "../../lib/utils";
 
