@@ -22,7 +22,7 @@ const jsonLd: WithContext<Person> = {
   sameAs: "https://www.nori.nyc",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "New York, NY"
+    addressLocality: "New York, NY",
   },
   disambiguatingDescription:
     "A Software Engineer specializing in building fast, accessible, and user-friendly applications. With expertise in tech such as TypeScript, React, Next.js, and Node.js, I create scalable solutions that drive results.",
@@ -33,16 +33,149 @@ const jsonLd: WithContext<Person> = {
 export default function About() {
   const data = [
     {
-      title: "2025",
+      title: "2025 - ",
       content: (
         <div>
-          <p className="text-xs md:text-sm font-bold mb-1">Various Clients</p>
-          <p className="text-neutral-400 text-xs md:text-sm mb-2">Freelance / Contractor</p>
+          <p className="text-xs md:text-sm font-bold mb-1">WisdomSeek (TBD)</p>
+          <p className="text-neutral-400 text-xs md:text-sm mb-2">
+            Senior Software Engineer
+            <br />
+            Chief Technology Officer
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            A spiritual wellness platform leveraging advanced AI to deliver
+            personalized and spiritual guidance. Proprietary conversational AI system using
+            prompt engineering and natural language processing to create intuitive
+            experiences that balance spirtual insight with grounded psychological support.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Developed Next.js application with third party authentication system and Stripe API
+            integration for subscription management, building comprehensive user onboarding and
+            billing webhooks with automated payment processing.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Integrated Vercel AI SDK useChat hook to establish seamless communication between Next.js and
+            Python FastAPI, enabling real-time streamable AI responses for dynamic, conversational
+            user experiences.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Built comprehensive token-based usage tracking system monitoring API consumption, user
+            engagement metrics, and subscription utilization to optimize both user experience and
+            operational costs.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Created scalable backend infrastructure supporting real-time personalization and
+            symbolic interpretation.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Implemented modern user experience flows that make traditional practices
+            accessible to modern digital audiences.
+          </p>
+          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+            <li className="mr-1.5 mt-2">
+              <Badge>TypeScript</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>JavaScript</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>React</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Next.js</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Python</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>FastAPI</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Tanstack Query</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Mantine</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>TailwindCSS</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Github Actions</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Stripe API</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>OpenAI API</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Amazon Web Services</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>MongoDB</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>PostgreSQL</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Better Auth</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Docker</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Resend</Badge>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "2025 -",
+      content: (
+        <div>
+          <p className="text-xs md:text-sm font-bold mb-1">Code S LLC (2nd stint) - TBD name</p>
+          <p className="text-neutral-400 text-xs md:text-sm mb-2">Freelance</p>
           <p className="text-xs md:text-sm font-normal mb-4">
             Worked on a large talent agency that raked in $1+ million in revenue, modernizing and
             updating legacy code, making it easier for people to book their favorite artists for
             public and private events.
           </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Contracted to a VBRO compeditor, providing a full consultation of their existing
+            website, highlighting optimizations to UI/UX, providing a spreadsheet of accessiblity
+            tasks to achieve WCAG 2.0, and details on how to improve page speed load times and
+            readability specific to their platform.
+          </p>
+          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+            <li className="mr-1.5 mt-2">
+              <Badge>JavaScript</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>TypeScript</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>React</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>PHP</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Composer</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Google Lighthouse</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Google Tag Manager</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Web Accessiblity</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Web Optimizations</Badge>
+            </li>
+          </ul>
         </div>
       ),
     },
@@ -52,7 +185,7 @@ export default function About() {
         <div>
           <p className="text-xs md:text-sm font-bold mb-1">Aetna, a CVS Health Company</p>
           <p className="text-neutral-400 text-xs md:text-sm mb-2">
-            Lead Software Engineer (Manager) (2022-2025)
+            Lead/Manager Software Engineer (2022-2025)
             <br />
             Senior Software Engineer (2020-2025)
             <br />
@@ -65,10 +198,33 @@ export default function About() {
           </p>
           <p className="text-xs md:text-sm font-normal mb-4">
             Lead a successful mobile application pilot in retail CVS utilizing React, TypeScript,
-            Redux, JavaScript, PHP and headless WordPress. Implemented and managed an AI chatbot
-            which captured member traffic on web pages, driving enhanced prospect engagement and
-            sales. Created and managed a Next.js web platform with Azure App Service tailored for
-            creating marketing pages for prospects looking for Medicare insurance.
+            Redux, JavaScript, PHP and headless WordPress.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Implemented and managed an AI chatbot which captured member traffic on web pages,
+            driving enhanced prospect engagement and sales.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Hosted monthly deep dives to upper management, detailing technical timelines related to
+            company goals to a non-technical audience on an organizational level.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Assisted offshore and translated technical jargon to cross-organization teams on
+            upgrading cloud infrastructure properties.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Lead technical security package migrations on a legacy application with Vue on
+            enterprise infrastructure.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Integrated tools such as Google Analytics with specific metrics tracking, Microsoft
+            Clarity for heatmaps, Quantum Metrics, and Adobe products that contributed to success of
+            team goals.
+          </p>
+          <p className="text-xs md:text-sm font-normal mb-4">
+            Architected and managed a Next.js web application within Azure App Service to create a
+            new sales channel that tailored for creating marketing pages for prospects looking for
+            Medicare insurance.
           </p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
             <li className="mr-1.5 mt-2">
@@ -76,6 +232,9 @@ export default function About() {
             </li>
             <li className="mr-1.5 mt-2">
               <Badge>TypeScript</Badge>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <Badge>Next.js</Badge>
             </li>
             <li className="mr-1.5 mt-2">
               <Badge>React</Badge>
