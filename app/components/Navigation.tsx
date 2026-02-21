@@ -1,12 +1,12 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { Construction, Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
+import { useEffect, useState } from "react";
 import { BreadcrumbList, WithContext } from "schema-dts";
-import { AnimatePresence, motion } from "motion/react";
-import { Menu, X, Construction } from "lucide-react";
 import { cn } from "../../lib/utils";
 
 const navigation = [
@@ -165,6 +165,7 @@ const MobileMenu = ({
                     alt="Brian Noriega circle logo"
                     src="/bnsite/photo-circle.webp"
                     className="h-10 w-auto"
+                    loading="eager"
                   />
                 </Link>
                 <button

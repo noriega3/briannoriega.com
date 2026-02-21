@@ -1,11 +1,10 @@
-import React from "react";
-import { Person, WithContext } from "schema-dts";
 import { Metadata } from "next";
 import Script from "next/script";
-import { Timeline } from "../components/ui/timeline";
-import { ContactIcons } from "../components/ui/contact-icons";
+import { Person, WithContext } from "schema-dts";
 import { Certifications } from "../components/Certifications";
 import { Badge } from "../components/ui/badge";
+import { ContactIcons } from "../components/ui/contact-icons";
+import { Timeline } from "../components/ui/timeline";
 
 export const metadata: Metadata = {
   title: "About",
@@ -27,7 +26,7 @@ const jsonLd: WithContext<Person> = {
   disambiguatingDescription:
     "A Software Engineer specializing in building accessible, and user-friendly applications. With expertise in tech such as TypeScript, React, Next.js, and Node.js, I create scalable solutions that drive results.",
   skills:
-    "TypeScript, React, Next.js, Node.js, Python, Django, Koltin, PHP, Lua, JavaScript, JQuery, WordPress, SPA, Vue, C#, Unity, Visual Basic, MYSQL, MariaDB, REST APIs, SEO, Software Development, Mobile App Development, Agile, Automation, AI",
+    "TypeScript, React, Next.js, Node.js, Python, Django, Kotlin, PHP, Lua, JavaScript, JQuery, WordPress, SPA, Vue, C#, Unity, Visual Basic, MYSQL, MariaDB, REST APIs, SEO, Software Development, Mobile App Development, Agile, Automation, AI",
 };
 
 export default function About() {
@@ -62,7 +61,7 @@ export default function About() {
               <Badge>Django</Badge>
             </li>
             <li className="mt-2 mr-1.5">
-              <Badge>Koltin</Badge>
+              <Badge>Kotlin</Badge>
             </li>
             <li className="mt-2 mr-1.5">
               <Badge>Material UI</Badge>
@@ -72,9 +71,6 @@ export default function About() {
             </li>
             <li className="mt-2 mr-1.5">
               <Badge>Github Copilot</Badge>
-            </li>
-            <li className="mt-2 mr-1.5">
-              <Badge>Amazon Web Services</Badge>
             </li>
             <li className="mt-2 mr-1.5">
               <Badge>Ditto</Badge>
@@ -87,6 +83,9 @@ export default function About() {
             </li>
             <li className="mt-2 mr-1.5">
               <Badge>Docker</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Amazon Web Services</Badge>
             </li>
           </ul>
         </div>

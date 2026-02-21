@@ -40,7 +40,7 @@ export const HeroParallax = ({
     <>
       <div
         ref={ref}
-        className="h-auto sm:-mt-24 pt-0 md:pt-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-10"
+        className="h-auto sm:-mt-24 pt-0 md:pt-20 overflow-hidden antialiased relative flex flex-col self-auto perspective-[1000px] transform-3d z-10"
       >
         <Header />
         <motion.div
@@ -67,7 +67,7 @@ export const HeroParallax = ({
       <div className="hidden sm:flex justify-center">
         <Link href="/projects">
           <button className="p-[3px] relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+            <div className="absolute inset-0 bg-linear-to-r from-indigo-500 to-purple-500 rounded-lg" />
             <div className="px-8 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
               View All Projects
             </div>
@@ -129,14 +129,14 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-96 w-120 relative shrink-0"
     >
       <Image
         aria-hidden="true"
         src={product.thumbnail}
         height="500"
         width="500"
-        className="object-cover object-left-top absolute h-full w-full inset-0"
+        className="object-cover object-top-left absolute h-full w-full inset-0"
         alt={product.title}
       />
     </motion.div>

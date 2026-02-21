@@ -33,7 +33,7 @@ const QuoteHighlight = ({ icon = "", author, authorTitle, title = "", quote }: Q
       </div>
     </div>
     <div className="absolute top-0 right-14 sm:right-28 -z-10 hidden lg:block">
-      <BiSolidQuoteAltLeft className="h-[7.5rem] w-[7.5rem] opacity-50" width={104} height={102} />
+      <BiSolidQuoteAltLeft className="h-30 w-30 opacity-50" width={104} height={102} />
     </div>
     <div className="p-8 pt-0">
       <h1 className="text-white font-medium text-xl mb-4">{title}</h1>
