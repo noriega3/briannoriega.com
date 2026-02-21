@@ -27,7 +27,7 @@ const jsonLd: WithContext<Person> = {
   disambiguatingDescription:
     "A Software Engineer specializing in building accessible, and user-friendly applications. With expertise in tech such as TypeScript, React, Next.js, and Node.js, I create scalable solutions that drive results.",
   skills:
-    "TypeScript, React, Next.js, Node.js, Python, PHP, Lua, JavaScript, JQuery, WordPress, SPA, Vue, C#, Unity, Visual Basic, MYSQL, MariaDB, REST APIs, SEO, Software Development, Mobile App Development, Agile, Automation, AI",
+    "TypeScript, React, Next.js, Node.js, Python, Django, Koltin, PHP, Lua, JavaScript, JQuery, WordPress, SPA, Vue, C#, Unity, Visual Basic, MYSQL, MariaDB, REST APIs, SEO, Software Development, Mobile App Development, Agile, Automation, AI",
 };
 
 export default function About() {
@@ -36,17 +36,77 @@ export default function About() {
       title: "2025 - ",
       content: (
         <div>
-          <p className="mb-1 text-xs font-bold md:text-sm">WisdomSeek AI</p>
+          <p className="mb-1 text-xs font-bold md:text-sm">Clover</p>
+          <p className="mb-2 text-xs text-neutral-400 md:text-sm">
+            Software Engineer
+          </p>
+          <p className="mb-4 text-xs font-normal md:text-sm">
+          </p>
+          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+            <li className="mt-2 mr-1.5">
+              <Badge>TypeScript</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>JavaScript</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>React</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Next.js</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Python</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Django</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Koltin</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Material UI</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Github Actions</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Github Copilot</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Amazon Web Services</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Ditto</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>PostgreSQL</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Snowflake</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Docker</Badge>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "2025 - ",
+      content: (
+        <div>
+          <p className="mb-1 text-xs font-bold md:text-sm">WisdomSeek</p>
           <p className="mb-2 text-xs text-neutral-400 md:text-sm">
             Full Stack Software Engineer
             <br />
             Chief Technology Officer
           </p>
           <p className="mb-4 text-xs font-normal md:text-sm">
-            A spiritual wellness platform leveraging advanced AI to deliver personalized and
-            spiritual guidance. Proprietary conversational AI system using prompt engineering and
-            natural language processing to create intuitive experiences that balance spirtual
-            insight with grounded psychological support.
+            An AI-powered journaling and self-reflection platform that combines guided reflection
+            with longitudinal learning to help users identify patterns in their thoughts, behaviors,
+            and emotions. The platform delivers personalized insights and actionable recommendations
+            through adaptive AI interactions.
           </p>
           <p className="mb-4 text-xs font-normal md:text-sm">
             Built Next.js application with third-party authentication integration and Stripe API for
@@ -135,7 +195,7 @@ export default function About() {
       title: "2025 -",
       content: (
         <div>
-          <p className="mb-1 text-xs font-bold md:text-sm">Code S LLC (2nd stint) - TBD name</p>
+          <p className="mb-1 text-xs font-bold md:text-sm">Freelance business - TBD name</p>
           <p className="mb-2 text-xs text-neutral-400 md:text-sm">Freelance</p>
           <p className="mb-4 text-xs font-normal md:text-sm">
             Worked on a large talent agency that raked in $1+ million in revenue, modernizing and
@@ -181,6 +241,66 @@ export default function About() {
       ),
     },
     {
+      title: "Late 2025",
+      content: (
+        <div>
+          <p className="mb-1 text-xs font-bold md:text-sm">Spectrum, Charter Communications</p>
+          <p className="mb-2 text-xs text-neutral-400 md:text-sm">
+            Software Engineer
+          </p>
+          <p className="mb-4 text-xs font-normal md:text-sm">
+            Architected and implemented a modern Remix.js/PostgreSQL web application to replace
+            manual inventory and equipment installation workflows, designing scalable database schemas
+            and collaborating with design teams on UI/UX.
+          </p>
+          <p className="mb-4 text-xs font-normal md:text-sm">
+            Modernized hosted legacy design package through cross-functional collaboration with design and
+            product teams, improving consistency and developer experience.
+          </p>
+          <p className="mb-4 text-xs font-normal md:text-sm">
+            Mentored distributed engineering teams on AI-assisted development best practices, providing
+            detailed code reviews and fostering a culture of continuous learning.
+          </p>
+          <p className="mb-4 text-xs font-normal md:text-sm">
+            Designed user-centric workflows that seamlessly integrated traditional processes with modern
+            digital interfaces, enhancing accessibility and user adoption.
+          </p>
+          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+            <li className="mt-2 mr-1.5">
+              <Badge>TypeScript</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>JavaScript</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Remix.js</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>React</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>TailwindCSS</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Gitlab</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Amazon Q</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Amazon Web Services</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>Prisma</Badge>
+            </li>
+            <li className="mt-2 mr-1.5">
+              <Badge>PostgreSQL</Badge>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
       title: "2020 - 2025",
       content: (
         <div>
@@ -202,7 +322,7 @@ export default function About() {
             Redux, JavaScript, PHP and headless WordPress.
           </p>
           <p className="mb-4 text-xs font-normal md:text-sm">
-            Implemented and managed an AI chatbot which captured member traffic on web pages,
+            Implemented and continuously improved an AI chatbot which captured member traffic on web pages,
             driving enhanced prospect engagement and sales.
           </p>
           <p className="mb-4 text-xs font-normal md:text-sm">
