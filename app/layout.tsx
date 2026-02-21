@@ -22,8 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="dark">
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTAG_ID || ""} />
       <body className="relative w-full h-svh flex flex-row sm:flex-col flex-wrap sm:flex-nowrap bg-slate-900 leading-relaxed text-slate-300 antialiased selection:bg-teal-300 selection:text-teal-900">
-        <Navigation className="w-fixed w-full flex-shrink flex-grow-0" />
-        <main role="main" className="w-full flex-grow">
+        <Navigation className="w-fixed w-full shrink grow-0" />
+        <main role="main" className="w-full grow">
           {children}
         </main>
         <Footer />

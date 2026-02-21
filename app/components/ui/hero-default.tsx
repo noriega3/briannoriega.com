@@ -19,7 +19,7 @@ const skills = ["TypeScript", "JavaScript", "React", "Next.js", "Node", "MySQL",
 export const HeroDefault = () => {
   return (
     <section>
-      <div className="relative px-4 mx-auto max-w-screen-xl text-center lg:py-56">
+      <div className="relative px-4 mx-auto max-w-(--breakpoint-xl) text-center lg:py-56">
         <h1 className="mb-4">
           <TypewriterEffect
             words={words}
